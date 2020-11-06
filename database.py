@@ -1,11 +1,12 @@
 import psycopg2
 from dotenv import load_dotenv
+import os
 load_dotenv()
 
 connection = psycopg2.connect(
     database="library_api",
     user="app",
-    password=os.getenv"db_pass",
+    password=os.getenv("db_pass"),
     port = "5432",
     host="localhost"
 )
